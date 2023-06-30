@@ -7,3 +7,7 @@ def consonant_count(s):
             count += 1
             
     return count
+
+
+def consonant_count_comprehension(s):
+    return sum(c in "bcdfghjklmnpqrstvwxyz" for c in s.lower())    
