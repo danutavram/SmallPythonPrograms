@@ -1,0 +1,10 @@
+def rot13(message):
+	# Define the translation table for ROT13
+	alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+	rot13_alphabet = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm"
+	translation_table = str.maketrans(alphabet, rot13_alphabet)
+	
+	# Apply ROT13 translation
+	translated_text = message.translate(translation_table)
+	
+	return translated_text
