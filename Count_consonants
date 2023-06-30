@@ -1,0 +1,9 @@
+def consonant_count(s):
+    consonants = 'bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ'
+    count = 0
+    
+    for char in s:
+        if char in consonants:
+            count += 1
+            
+    return count
